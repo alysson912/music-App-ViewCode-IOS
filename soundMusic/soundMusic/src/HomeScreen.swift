@@ -18,11 +18,24 @@ class HomeScreen: UIView {
         return label
     }()
     
+    lazy var emailTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.autocorrectionType = .no
+        tf.backgroundColor = .white
+        tf.borderStyle = .roundedRect
+        tf.keyboardType = .emailAddress // defaut
+        tf.placeholder = "E-mail: user@outlook.com"
+        tf.textColor = .darkGray
+        tf.isSecureTextEntry = false
+        return tf
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         addSubview(loginLabel)
+        addSubview(emailTextField)
         setupConstraints()
     }
     
@@ -34,7 +47,11 @@ class HomeScreen: UIView {
         NSLayoutConstraint.activate([
         
             loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            loginLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
+            loginLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            
+            emailTextField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 16),
+            emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 35),
+            emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -35),
         
         ])
     }

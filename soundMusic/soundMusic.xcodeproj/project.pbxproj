@@ -17,6 +17,7 @@
 		389A803A29A68E9F00D1277C /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A803729A68E9F00D1277C /* UIView + Extension.swift */; };
 		389A803B29A68E9F00D1277C /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A803829A68E9F00D1277C /* NSTextAttachment + Extension.swift */; };
 		389A803E29A68F0B00D1277C /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A803D29A68F0B00D1277C /* CardViewModel.swift */; };
+		38E9A35A29A69C56001A1889 /* CardViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9A35929A69C56001A1889 /* CardViewTableViewCell.swift */; };
 		65CC7402F1943251618B8E75 /* Pods_soundMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF402437E52337614A7BE477 /* Pods_soundMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		389A803729A68E9F00D1277C /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		389A803829A68E9F00D1277C /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
 		389A803D29A68F0B00D1277C /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		38E9A35929A69C56001A1889 /* CardViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewTableViewCell.swift; sourceTree = "<group>"; };
 		3E955BC66020A1EF934DFF48 /* Pods-soundMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundMusic.release.xcconfig"; path = "Target Support Files/Pods-soundMusic/Pods-soundMusic.release.xcconfig"; sourceTree = "<group>"; };
 		A632AD55FBA38B60E90FA2BB /* Pods-soundMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundMusic.debug.xcconfig"; path = "Target Support Files/Pods-soundMusic/Pods-soundMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		AF402437E52337614A7BE477 /* Pods_soundMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 		38E9A35529A69596001A1889 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				38E9A35829A69AA6001A1889 /* Cell */,
 				38E9A35729A6961A001A1889 /* ViewController */,
 				38E9A35629A69611001A1889 /* Screen */,
 			);
@@ -141,6 +144,14 @@
 				389A802229A689E700D1277C /* HomeVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		38E9A35829A69AA6001A1889 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				38E9A35929A69C56001A1889 /* CardViewTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BF14AFEC5DC4061E2E83B692 /* Frameworks */ = {
@@ -247,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E9A35A29A69C56001A1889 /* CardViewTableViewCell.swift in Sources */,
 				389A803429A68BB700D1277C /* HomeScreen.swift in Sources */,
 				389A802329A689E700D1277C /* HomeVC.swift in Sources */,
 				389A803B29A68E9F00D1277C /* NSTextAttachment + Extension.swift in Sources */,

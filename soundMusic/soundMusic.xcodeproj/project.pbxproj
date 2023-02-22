@@ -56,7 +56,6 @@
 				A632AD55FBA38B60E90FA2BB /* Pods-soundMusic.debug.xcconfig */,
 				3E955BC66020A1EF934DFF48 /* Pods-soundMusic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,8 +95,7 @@
 			children = (
 				389A803529A68E9F00D1277C /* Extension */,
 				389A803C29A68F0B00D1277C /* Model */,
-				389A802229A689E700D1277C /* HomeVC.swift */,
-				389A803329A68BB700D1277C /* HomeScreen.swift */,
+				38E9A35529A69596001A1889 /* Home */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -118,6 +116,31 @@
 				389A803D29A68F0B00D1277C /* CardViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		38E9A35529A69596001A1889 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				38E9A35729A6961A001A1889 /* ViewController */,
+				38E9A35629A69611001A1889 /* Screen */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		38E9A35629A69611001A1889 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				389A803329A68BB700D1277C /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		38E9A35729A6961A001A1889 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				389A802229A689E700D1277C /* HomeVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		BF14AFEC5DC4061E2E83B692 /* Frameworks */ = {

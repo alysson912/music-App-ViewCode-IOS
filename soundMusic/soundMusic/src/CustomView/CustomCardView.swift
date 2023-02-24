@@ -200,7 +200,7 @@ class CustomCardView: UIView {
             cardCategoryTitleLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
             
             cardCategoryDateLabel.topAnchor.constraint(equalTo: cardCategoryTitleLabel.bottomAnchor, constant: 2),
-            cardCategoryTitleLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
+            cardCategoryDateLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
             
             cardTitle.topAnchor.constraint(equalTo: cardCategoryDateLabel.bottomAnchor, constant: 20),
             cardTitle.leadingAnchor.constraint(equalTo: cardContainerView.leadingAnchor, constant: 20),

@@ -15,6 +15,7 @@ class HomeScreen: UIView {
         tv.separatorStyle = .none // retirando linhas
         tv.tableFooterView = UIView()
         tv.showsVerticalScrollIndicator = false // desativando scrool indicator
+        tv.register(CardViewTableViewCell.self, forCellReuseIdentifier: CardViewTableViewCell.identifier)
         return tv
     }()
     

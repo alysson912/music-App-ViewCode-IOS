@@ -133,12 +133,11 @@ class CustomCardView: UIView {
         return l
     }()
     
-    init( viewMode: ViewMode, cardData: CardViewModel){
+    init(){
         let frame = CGRect.zero
-        vmode = viewMode
-        dataModel = cardData
         super.init(frame: frame)
         addSubviews()
+        setUpConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -163,6 +162,60 @@ class CustomCardView: UIView {
         updateLayout(for: vmode ?? .card)
     }
     
+    private func setUpConstraints(){
+        
+        containerLeadingConstraints = cardContainerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30)
+        containerLeadingConstraints?.isActive = true
+        
+        containerTopConstraints = cardContainerView.topAnchor.constraint(equalTo: topAnchor, constant: 15)
+        containerTopConstraints?.isActive = true
+        
+        containerBottomConstraints = cardContainerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15)
+        containerBottomConstraints?.isActive = true
+        
+        containerTrailingConstraints = cardContainerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30)
+        containerTrailingConstraints?.isActive = true
+        
+        overLayView.pin(to: cardContainerView)
+        cardImage.pin(to: cardContainerView)
+        
+        NSLayoutConstraint.activate([
+            profileBorderView.topAnchor.constraint(equalTo: cardContainerView.topAnchor, constant: 60),
+            profileBorderView.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
+            profileBorderView.widthAnchor.constraint(equalToConstant: 50),
+            profileBorderView.heightAnchor.constraint(equalToConstant: 50),
+            
+            
+            addProfileImageButton.trailingAnchor.constraint(equalTo: profileBorderView.trailingAnchor, constant: 4),
+            addProfileImageButton.bottomAnchor.constraint(equalTo: profileBorderView.bottomAnchor, constant: 4),
+            addProfileImageButton.widthAnchor.constraint(equalToConstant: 20),
+            addProfileImageButton.heightAnchor.constraint(equalToConstant: 20),
+            
+            cardProfilePicture.centerXAnchor.constraint(equalTo: profileBorderView.centerXAnchor),
+            cardProfilePicture.centerYAnchor.constraint(equalTo: profileBorderView.centerYAnchor),
+            cardProfilePicture.widthAnchor.constraint(equalToConstant: 40),
+            cardProfilePicture.heightAnchor.constraint(equalToConstant: 40),
+            
+            cardCategoryTitleLabel.topAnchor.constraint(equalTo: profileBorderView.bottomAnchor, constant: 10),
+            cardCategoryTitleLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
+            
+            cardCategoryDateLabel.topAnchor.constraint(equalTo: cardCategoryTitleLabel.bottomAnchor, constant: 2),
+            cardCategoryTitleLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
+            
+            cardTitle.topAnchor.constraint(equalTo: cardCategoryDateLabel.bottomAnchor, constant: 20),
+            cardTitle.leadingAnchor.constraint(equalTo: cardContainerView.leadingAnchor, constant: 20),
+            cardTitle.trailingAnchor.constraint(equalTo: cardContainerView.trailingAnchor, constant: -20),
+            
+            likeAndTimeLabel.topAnchor.constraint(equalTo: cardTitle.bottomAnchor, constant: 10),
+            likeAndTimeLabel.centerXAnchor.constraint(equalTo: cardContainerView.centerXAnchor),
+            
+            descriptionTitleLabel.topAnchor.constraint(equalTo: likeAndTimeLabel.bottomAnchor, constant: 30),
+            descriptionTitleLabel.leadingAnchor.constraint(equalTo: cardContainerView.leadingAnchor, constant: 40),
+            descriptionTitleLabel.trailingAnchor.constraint(equalTo: cardContainerView.trailingAnchor, constant: -40),
+            
+        ])
+    }
+    
     private func updateLayout(for mode: ViewMode){
         if mode == .full{
             containerTopConstraints?.constant = 0
@@ -178,5 +231,16 @@ class CustomCardView: UIView {
             descriptionTitleLabel.isHidden = true // ativada quando expandir
             
         }
+    }
+    
+    public func setupView(data: CardViewModel){
+        cardCategoryTitleLabel.text = data.categoryName
+        cardCategoryDateLabel.text = data.categoryDate
+        cardTitle.text = data.cardTitle
+        likeAndTimeLabel.attributedText = NSAttributedString.featureText(data.likeCount ?? "" , data.duration ?? "")
+        descriptionTitleLabel.text = data.cardDescription
+        cardImage.image = UIImage(named: data.cardImage ?? "")
+        cardProfilePicture.image = UIImage(named: data.categoryImage ?? "")
+        
     }
 }

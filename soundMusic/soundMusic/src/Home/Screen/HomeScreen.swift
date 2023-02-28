@@ -27,7 +27,6 @@ class HomeScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         addSubview(tableView)
         setUpConstraints()
     }

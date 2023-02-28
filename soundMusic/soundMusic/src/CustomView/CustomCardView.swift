@@ -133,11 +133,19 @@ class CustomCardView: UIView {
         return l
     }()
     
-    init(){
+    lazy var actionsView : CardActionView = {
+       let v = CardActionView()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        
+        return v
+    }()
+    
+    init(mode:  ViewMode){
         let frame = CGRect.zero
         super.init(frame: frame)
         addSubviews()
         setUpConstraints()
+        updateLayout(for: mode)
     }
     
     required init?(coder: NSCoder) {
@@ -159,7 +167,9 @@ class CustomCardView: UIView {
         cardContainerView.addSubview(cardTitle)
         cardContainerView.addSubview(likeAndTimeLabel)
         cardContainerView.addSubview(descriptionTitleLabel)
-        updateLayout(for: vmode ?? .card)
+        cardContainerView.addSubview(actionsView)
+        
+    updateLayout(for: self.vmode ?? .card)
     }
     
     private func setUpConstraints(){
@@ -213,6 +223,10 @@ class CustomCardView: UIView {
             descriptionTitleLabel.leadingAnchor.constraint(equalTo: cardContainerView.leadingAnchor, constant: 40),
             descriptionTitleLabel.trailingAnchor.constraint(equalTo: cardContainerView.trailingAnchor, constant: -40),
             
+            actionsView.bottomAnchor.constraint(equalTo: cardContainerView.bottomAnchor, constant: -20),
+            actionsView.leadingAnchor.constraint(equalTo: cardContainerView.leadingAnchor, constant: 20),
+            actionsView.trailingAnchor.constraint(equalTo: cardContainerView.trailingAnchor, constant: -20),
+            actionsView.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
     
@@ -231,6 +245,7 @@ class CustomCardView: UIView {
             descriptionTitleLabel.isHidden = true // ativada quando expandir
             
         }
+        actionsView.updateLayout(for: mode)
     }
     
     public func setupView(data: CardViewModel){

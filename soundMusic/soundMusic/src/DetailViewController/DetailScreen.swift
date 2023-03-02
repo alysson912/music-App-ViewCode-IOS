@@ -99,9 +99,8 @@ class DetailScreen: UIView {
         addSubview(scrollView)
         scrollView.addSubview(cardView)
         scrollView.addSubview(tableView)
-        addSubview(closeBtn)
         addSubview(navBar)
-        
+        addSubview(closeBtn)
     }
     private func setupConstraints(){
         let window = UIApplication.shared.connectedScenes
@@ -134,7 +133,7 @@ class DetailScreen: UIView {
             
             navBar.leadingAnchor.constraint(equalTo: leadingAnchor),
             navBar.trailingAnchor.constraint(equalTo: trailingAnchor),
-            navBar.heightAnchor.constraint(equalToConstant: (( topPadding ?? 0.0) + 80))
+            navBar.heightAnchor.constraint(equalToConstant: (( topPadding ?? 0.0) + 80)),
         ])
         navBarTopAnchor = navBar.topAnchor.constraint(equalTo: topAnchor, constant: -(( topPadding ?? 0.0) + 60))
         navBarTopAnchor?.isActive = true

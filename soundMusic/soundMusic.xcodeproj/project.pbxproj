@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38353BC829AE75BD00465C93 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38353BC729AE75BD00465C93 /* DetailVC.swift */; };
+		38353BCA29AE760200465C93 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38353BC929AE760200465C93 /* DetailScreen.swift */; };
+		388CDAAF29B024D500EB9EF1 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAAE29B024D500EB9EF1 /* DetailTableViewCell.swift */; };
+		388CDAB229B0256700EB9EF1 /* DetailTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAB129B0256700EB9EF1 /* DetailTableViewCellScreen.swift */; };
+		388CDAB529B117E400EB9EF1 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */; };
 		389A801F29A689E700D1277C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A801E29A689E700D1277C /* AppDelegate.swift */; };
 		389A802129A689E700D1277C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A802029A689E700D1277C /* SceneDelegate.swift */; };
 		389A802329A689E700D1277C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A802229A689E700D1277C /* HomeVC.swift */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38353BC729AE75BD00465C93 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		38353BC929AE760200465C93 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		388CDAAE29B024D500EB9EF1 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		388CDAB129B0256700EB9EF1 /* DetailTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCellScreen.swift; sourceTree = "<group>"; };
+		388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		389A801B29A689E700D1277C /* soundMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soundMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389A801E29A689E700D1277C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389A802029A689E700D1277C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		38353BC629AE759C00465C93 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38353BC729AE75BD00465C93 /* DetailVC.swift */,
+				38353BC929AE760200465C93 /* DetailScreen.swift */,
+				388CDAAD29B024B200EB9EF1 /* Cell */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		388CDAAD29B024B200EB9EF1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				388CDAAE29B024D500EB9EF1 /* DetailTableViewCell.swift */,
+				388CDAB329B0257600EB9EF1 /* Screen */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		388CDAB329B0257600EB9EF1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				388CDAB129B0256700EB9EF1 /* DetailTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		389A801229A689E700D1277C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +136,7 @@
 		389A803229A68B9900D1277C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				38353BC629AE759C00465C93 /* DetailViewController */,
 				389A803529A68E9F00D1277C /* Extension */,
 				389A803C29A68F0B00D1277C /* Model */,
 				38E9A35B29A6C907001A1889 /* CustomView */,
@@ -164,6 +202,7 @@
 			children = (
 				38E9A35C29A6C928001A1889 /* CustomCardView.swift */,
 				38E9A35E29A91794001A1889 /* CardActionView.swift */,
+				388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -274,11 +313,16 @@
 			files = (
 				38E9A35A29A69C56001A1889 /* CardViewTableViewCell.swift in Sources */,
 				389A803429A68BB700D1277C /* HomeScreen.swift in Sources */,
+				388CDAB529B117E400EB9EF1 /* CustomNavBar.swift in Sources */,
+				388CDAB229B0256700EB9EF1 /* DetailTableViewCellScreen.swift in Sources */,
+				388CDAAF29B024D500EB9EF1 /* DetailTableViewCell.swift in Sources */,
 				389A802329A689E700D1277C /* HomeVC.swift in Sources */,
 				389A803B29A68E9F00D1277C /* NSTextAttachment + Extension.swift in Sources */,
 				389A803A29A68E9F00D1277C /* UIView + Extension.swift in Sources */,
+				38353BC829AE75BD00465C93 /* DetailVC.swift in Sources */,
 				389A803E29A68F0B00D1277C /* CardViewModel.swift in Sources */,
 				38E9A35F29A91794001A1889 /* CardActionView.swift in Sources */,
+				38353BCA29AE760200465C93 /* DetailScreen.swift in Sources */,
 				389A801F29A689E700D1277C /* AppDelegate.swift in Sources */,
 				38E9A35D29A6C928001A1889 /* CustomCardView.swift in Sources */,
 				389A803929A68E9F00D1277C /* NSAttributedString + Extension.swift in Sources */,

@@ -172,5 +172,149 @@ var CardData = [
                 listSubtitle: "Max Richter - Hostiles"
             )
         ]
+    ),
+    CardViewModel(
+        categoryImage: "cat2",
+        categoryName: "PERFECT OLDIES",
+        categoryDate: "July 2018",
+        cardTitle: "80s Smash Hits",
+        likeCount: "9,543",
+        duration: "5h 35m",
+        cardDescription: "The music of 1980's remains a tribute to glorious excess and left us with some huge tunes. Celebrate them here.",
+        cardImage: "card2",
+        cardList: [
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            ),
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            ),
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            )
+        ]
+    ),
+    CardViewModel(
+        categoryImage: "cat2",
+        categoryName: "PERFECT OLDIES",
+        categoryDate: "July 2018",
+        cardTitle: "80s Smash Hits",
+        likeCount: "9,543",
+        duration: "5h 35m",
+        cardDescription: "The music of 1980's remains a tribute to glorious excess and left us with some huge tunes. Celebrate them here.",
+        cardImage: "card2",
+        cardList: [
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            ),
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            ),
+            CardListModel(
+                listImage: "list1",
+                listTitle: "Rosemary's Baby",
+                listSubtitle: "Krzysztof Komeda"
+            ),
+            CardListModel(
+                listImage: "list2",
+                listTitle: "Janus",
+                listSubtitle: ""
+            ),
+            CardListModel(
+                listImage: "list3",
+                listTitle: "By the Sea",
+                listSubtitle: "Eleni Karaindrou"
+            ),
+            CardListModel(
+                listImage: "list4",
+                listTitle: "Rsalee Theme",
+                listSubtitle: "Max Richter - Hostiles"
+            )
+        ]
     )
 ]

@@ -15,7 +15,7 @@ enum ViewMode{
 class CustomCardView: UIView {
 
     //MARK: PROPRIEDADES CARD
-    var vmode: ViewMode?
+
     var containerTopConstraints: NSLayoutConstraint?
     var containerLeadingConstraints: NSLayoutConstraint?
     var containerTrailingConstraints: NSLayoutConstraint?
@@ -169,7 +169,7 @@ class CustomCardView: UIView {
         cardContainerView.addSubview(descriptionTitleLabel)
         cardContainerView.addSubview(actionsView)
         
-    updateLayout(for: self.vmode ?? .card)
+        
     }
     
     private func setUpConstraints(){

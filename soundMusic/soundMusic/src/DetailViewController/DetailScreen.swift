@@ -40,6 +40,14 @@ class DetailScreen: UIView {
         return v
     }()
     
+    lazy var navBar: CustomNavBar = {
+       let v = CustomNavBar()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        v.backgroundColor = .black
+        v.setupView(data: cardModel ?? CardViewModel() )
+        return v
+    }()
+    
     lazy var tableView: UITableView = {
         let tv = UITableView()
         tv.translatesAutoresizingMaskIntoConstraints = false
@@ -51,6 +59,8 @@ class DetailScreen: UIView {
         tv.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         return tv
     }()
+    
+
     
     lazy var closeBtn: UIButton = {
         let btn = UIButton()
@@ -90,6 +100,7 @@ class DetailScreen: UIView {
         scrollView.addSubview(cardView)
         scrollView.addSubview(tableView)
         addSubview(closeBtn)
+        addSubview(navBar)
         
     }
     private func setupConstraints(){
@@ -119,8 +130,14 @@ class DetailScreen: UIView {
             closeBtn.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             closeBtn.widthAnchor.constraint(equalToConstant: 30),
             closeBtn.heightAnchor.constraint(equalToConstant: 30),
-            closeBtn.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10)
+            closeBtn.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
+            
+            navBar.leadingAnchor.constraint(equalTo: leadingAnchor),
+            navBar.trailingAnchor.constraint(equalTo: trailingAnchor),
+            navBar.heightAnchor.constraint(equalToConstant: (( topPadding ?? 0.0) + 80))
         ])
+        navBarTopAnchor = navBar.topAnchor.constraint(equalTo: topAnchor, constant: -(( topPadding ?? 0.0) + 60))
+        navBarTopAnchor?.isActive = true
     }
     public func configAllDelegates(tableViewDelegate: UITableViewDelegate, tableViewDataSource: UITableViewDataSource, scrollViewDelegate: UIScrollViewDelegate, detailViewScreenDelegate: DetailScreenDelegate){
         tableView.delegate = tableViewDelegate

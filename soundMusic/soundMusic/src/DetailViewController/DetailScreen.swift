@@ -78,6 +78,13 @@ class DetailScreen: UIView {
         return btn
     }()
     
+    lazy var playerView: CustomPlayerView = {
+       let pv = CustomPlayerView()
+        pv.translatesAutoresizingMaskIntoConstraints = false
+        
+        return pv
+    }()
+    
     @objc func closePressed(){
         delegate?.tappedCloseButton()
     }
@@ -101,6 +108,7 @@ class DetailScreen: UIView {
         scrollView.addSubview(tableView)
         addSubview(navBar)
         addSubview(closeBtn)
+        addSubview(playerView)
     }
     private func setupConstraints(){
         let window = UIApplication.shared.connectedScenes
@@ -134,6 +142,13 @@ class DetailScreen: UIView {
             navBar.leadingAnchor.constraint(equalTo: leadingAnchor),
             navBar.trailingAnchor.constraint(equalTo: trailingAnchor),
             navBar.heightAnchor.constraint(equalToConstant: (( topPadding ?? 0.0) + 80)),
+            
+            playerView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            playerView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            playerView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            playerView.heightAnchor.constraint(equalToConstant: 120),
+            
+            
         ])
         navBarTopAnchor = navBar.topAnchor.constraint(equalTo: topAnchor, constant: -(( topPadding ?? 0.0) + 60))
         navBarTopAnchor?.isActive = true

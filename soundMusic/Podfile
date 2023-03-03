@@ -7,4 +7,6 @@ target 'soundMusic' do
 
   # Pods for soundMusic
 
+pod 'MarqueeLabel'
+
 end

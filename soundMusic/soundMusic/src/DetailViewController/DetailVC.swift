@@ -35,7 +35,7 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        }
+    }
     private func animationWithView(){
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut){
             self.view.layoutIfNeeded()
@@ -51,13 +51,14 @@ class DetailVC: UIViewController {
         print(scrollView.contentOffset.y)
         
         if scrollView.contentOffset.y >= 300 {
-            self.screen?.navBarTopAnchor?.constant = 0
             
+            self.screen?.navBarTopAnchor?.constant = 0
             if valueAnimation == .long {
                 animationWithView()
             }
             valueAnimation = .short
         }else{
+            
             self.screen?.navBarTopAnchor?.constant = -((topPadding ?? 0.0) + 80)
             if valueAnimation == .short {
                 animationWithView()

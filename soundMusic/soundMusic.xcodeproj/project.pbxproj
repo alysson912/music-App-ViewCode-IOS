@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		38353BC829AE75BD00465C93 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38353BC729AE75BD00465C93 /* DetailVC.swift */; };
 		38353BCA29AE760200465C93 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38353BC929AE760200465C93 /* DetailScreen.swift */; };
+		383FB6B529B2607600113A32 /* CustomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383FB6B429B2607600113A32 /* CustomPlayerView.swift */; };
 		388CDAAF29B024D500EB9EF1 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAAE29B024D500EB9EF1 /* DetailTableViewCell.swift */; };
 		388CDAB229B0256700EB9EF1 /* DetailTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAB129B0256700EB9EF1 /* DetailTableViewCellScreen.swift */; };
 		388CDAB529B117E400EB9EF1 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		38353BC729AE75BD00465C93 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		38353BC929AE760200465C93 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		383FB6B429B2607600113A32 /* CustomPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerView.swift; sourceTree = "<group>"; };
 		388CDAAE29B024D500EB9EF1 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		388CDAB129B0256700EB9EF1 /* DetailTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCellScreen.swift; sourceTree = "<group>"; };
 		388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				38E9A35C29A6C928001A1889 /* CustomCardView.swift */,
 				38E9A35E29A91794001A1889 /* CardActionView.swift */,
 				388CDAB429B117E400EB9EF1 /* CustomNavBar.swift */,
+				383FB6B429B2607600113A32 /* CustomPlayerView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				389A801729A689E700D1277C /* Sources */,
 				389A801829A689E700D1277C /* Frameworks */,
 				389A801929A689E700D1277C /* Resources */,
+				E6CA108C98A67B1594536ED6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +308,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E6CA108C98A67B1594536ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundMusic/Pods-soundMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundMusic/Pods-soundMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundMusic/Pods-soundMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,6 +338,7 @@
 				388CDAB229B0256700EB9EF1 /* DetailTableViewCellScreen.swift in Sources */,
 				388CDAAF29B024D500EB9EF1 /* DetailTableViewCell.swift in Sources */,
 				389A802329A689E700D1277C /* HomeVC.swift in Sources */,
+				383FB6B529B2607600113A32 /* CustomPlayerView.swift in Sources */,
 				389A803B29A68E9F00D1277C /* NSTextAttachment + Extension.swift in Sources */,
 				389A803A29A68E9F00D1277C /* UIView + Extension.swift in Sources */,
 				38353BC829AE75BD00465C93 /* DetailVC.swift in Sources */,

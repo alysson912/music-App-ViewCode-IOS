@@ -7,103 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC593C822714681630C1145D3B4A3FC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BB01248C1C5CB973879C55B5ED3A439A /* Pods-soundMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8D984BB3B93C0C96D946FDFE32D73D /* Pods-soundMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3674F34FE87CC49504A01971F7E59BC /* Pods-soundMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4306A2CF43112019A1DF236C1604DDE /* Pods-soundMusic-dummy.m */; };
+		19EE53C9966D4142DD5B6BA2AD06D52B /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FE1F280EBE6CD17CB11D260C4855F /* MarqueeLabel.swift */; };
+		2DF1F2842BF627B387F208A99772044C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
+		2F9878203C57B16F8A2341363CE6ADE2 /* MarqueeLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAFCB43B643869D69EAE42616A6E549 /* MarqueeLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C6AFD4CB290FAE1620C48F6C33F9B9 /* Pods-soundMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D3C151475F8033024499BE3056CEBE /* Pods-soundMusic-dummy.m */; };
+		6CE0B8970AEE2F68ABC4434712981A8A /* MarqueeLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DF49C3CAE0CCE0323406E8F1B01F8 /* MarqueeLabel-dummy.m */; };
+		890D842A253CC9351D66015AB218F4DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		E1626A735B30299006EED938C8E6F40D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		E7C9CB4F6D6F2BDC7E712BDDAF0EAD1A /* Pods-soundMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D81EAFBC4B139A1375B45592A95C4C /* Pods-soundMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70BE6EE52CFB5E92B68F8FBE2A7E1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F771FEC4D20AF26D1C6D211AD0F89BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DB88E45B0ED14F0C8827BE9C46C95;
+			remoteInfo = MarqueeLabel;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0383DA211925000D73C804BF85BA3A5E /* Pods-soundMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-soundMusic.release.xcconfig"; sourceTree = "<group>"; };
-		4CB1EEA3BE33F6D58B2AF6D2CFD8D2CF /* Pods-soundMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-soundMusic-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D8D984BB3B93C0C96D946FDFE32D73D /* Pods-soundMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-soundMusic-umbrella.h"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7750ED940822294ADD8FF31B2D8CFE0A /* Pods-soundMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-soundMusic.modulemap"; sourceTree = "<group>"; };
+		147D1E396BFD010C500D8F2D1A2CA557 /* MarqueeLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.release.xcconfig; sourceTree = "<group>"; };
+		29044066C0C5B02975FE964035E767BE /* Pods-soundMusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-soundMusic-Info.plist"; sourceTree = "<group>"; };
+		46E50A1A1E7598D671663C90E2F9FF00 /* MarqueeLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.debug.xcconfig; sourceTree = "<group>"; };
+		4A0FE1F280EBE6CD17CB11D260C4855F /* MarqueeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarqueeLabel.swift; path = Sources/MarqueeLabel.swift; sourceTree = "<group>"; };
+		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		506C1805F0EAF8D2FDE3D524C708E880 /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
+		5FAFCB43B643869D69EAE42616A6E549 /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
+		6C2AF2A1E54DF909DE90C2E043EE16A8 /* Pods-soundMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-soundMusic-frameworks.sh"; sourceTree = "<group>"; };
+		7253F0F1AF3A2020C70C7C0F67D58A54 /* Pods-soundMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-soundMusic.release.xcconfig"; sourceTree = "<group>"; };
+		7CA86ABF5C2C99DA436C2E71CEA0D366 /* MarqueeLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MarqueeLabel-Info.plist"; sourceTree = "<group>"; };
+		844DF49C3CAE0CCE0323406E8F1B01F8 /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
+		88D81EAFBC4B139A1375B45592A95C4C /* Pods-soundMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-soundMusic-umbrella.h"; sourceTree = "<group>"; };
+		8A9C77A5F805A5224C8B5DD5014C97FF /* Pods-soundMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-soundMusic-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AF3A36335DED895591CF8ADDD0063E7A /* Pods-soundMusic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-soundMusic"; path = Pods_soundMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9F2C4564A52099AD9EF4902A6B76975 /* Pods-soundMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-soundMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C2923D6F88D939935AD2FFC0A6B41902 /* Pods-soundMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-soundMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		CFD87A2B32598A08280BCEA39D2F26B9 /* Pods-soundMusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-soundMusic-Info.plist"; sourceTree = "<group>"; };
-		D4306A2CF43112019A1DF236C1604DDE /* Pods-soundMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-soundMusic-dummy.m"; sourceTree = "<group>"; };
+		B3D3C151475F8033024499BE3056CEBE /* Pods-soundMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-soundMusic-dummy.m"; sourceTree = "<group>"; };
+		CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28151C7B9B53AC181A8CCA608A898BF /* MarqueeLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-prefix.pch"; sourceTree = "<group>"; };
+		D8E6FA1DF4B42FA78DD86B8C455B4546 /* Pods-soundMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-soundMusic.modulemap"; sourceTree = "<group>"; };
+		F549AD987746D20A9D0924F54CA68F09 /* Pods-soundMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-soundMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		FC235BFDBFE712399C60D209072CCF0B /* Pods-soundMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-soundMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BFC7B08F85C3D17BF24253CDE8F50FB8 /* Frameworks */ = {
+		7A34105693DF94135549326D294A3D51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC593C822714681630C1145D3B4A3FC6 /* Foundation.framework in Frameworks */,
+				E1626A735B30299006EED938C8E6F40D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1746FCBBF82FC26CB045D88B1BCC1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890D842A253CC9351D66015AB218F4DA /* Foundation.framework in Frameworks */,
+				2DF1F2842BF627B387F208A99772044C /* QuartzCore.framework in Frameworks */,
+				F70BE6EE52CFB5E92B68F8FBE2A7E1B8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B65F7FFFFBA743DDB2CAFE19B017A0A /* Products */ = {
+		4459BE41E678C50FB19BED170BC7B61C /* Pods-soundMusic */ = {
 			isa = PBXGroup;
 			children = (
+				D8E6FA1DF4B42FA78DD86B8C455B4546 /* Pods-soundMusic.modulemap */,
+				FC235BFDBFE712399C60D209072CCF0B /* Pods-soundMusic-acknowledgements.markdown */,
+				8A9C77A5F805A5224C8B5DD5014C97FF /* Pods-soundMusic-acknowledgements.plist */,
+				B3D3C151475F8033024499BE3056CEBE /* Pods-soundMusic-dummy.m */,
+				6C2AF2A1E54DF909DE90C2E043EE16A8 /* Pods-soundMusic-frameworks.sh */,
+				29044066C0C5B02975FE964035E767BE /* Pods-soundMusic-Info.plist */,
+				88D81EAFBC4B139A1375B45592A95C4C /* Pods-soundMusic-umbrella.h */,
+				F549AD987746D20A9D0924F54CA68F09 /* Pods-soundMusic.debug.xcconfig */,
+				7253F0F1AF3A2020C70C7C0F67D58A54 /* Pods-soundMusic.release.xcconfig */,
+			);
+			name = "Pods-soundMusic";
+			path = "Target Support Files/Pods-soundMusic";
+			sourceTree = "<group>";
+		};
+		7A95B4DC2790197F219CE4ECE9D80AEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel */,
 				AF3A36335DED895591CF8ADDD0063E7A /* Pods-soundMusic */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8DBA06A2ABA92FBD61961514AFA7E7D7 /* Targets Support Files */ = {
+		7DC3A4DA252ECE25B1F464ED41B5EE78 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B21A7C0E523A5BE0FF998A8914BD346C /* Pods-soundMusic */,
+				4459BE41E678C50FB19BED170BC7B61C /* Pods-soundMusic */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B21A7C0E523A5BE0FF998A8914BD346C /* Pods-soundMusic */ = {
+		ADDCF4F254169A4BAF86B07D092EDF72 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7750ED940822294ADD8FF31B2D8CFE0A /* Pods-soundMusic.modulemap */,
-				B9F2C4564A52099AD9EF4902A6B76975 /* Pods-soundMusic-acknowledgements.markdown */,
-				4CB1EEA3BE33F6D58B2AF6D2CFD8D2CF /* Pods-soundMusic-acknowledgements.plist */,
-				D4306A2CF43112019A1DF236C1604DDE /* Pods-soundMusic-dummy.m */,
-				CFD87A2B32598A08280BCEA39D2F26B9 /* Pods-soundMusic-Info.plist */,
-				5D8D984BB3B93C0C96D946FDFE32D73D /* Pods-soundMusic-umbrella.h */,
-				C2923D6F88D939935AD2FFC0A6B41902 /* Pods-soundMusic.debug.xcconfig */,
-				0383DA211925000D73C804BF85BA3A5E /* Pods-soundMusic.release.xcconfig */,
+				506C1805F0EAF8D2FDE3D524C708E880 /* MarqueeLabel.modulemap */,
+				844DF49C3CAE0CCE0323406E8F1B01F8 /* MarqueeLabel-dummy.m */,
+				7CA86ABF5C2C99DA436C2E71CEA0D366 /* MarqueeLabel-Info.plist */,
+				D28151C7B9B53AC181A8CCA608A898BF /* MarqueeLabel-prefix.pch */,
+				5FAFCB43B643869D69EAE42616A6E549 /* MarqueeLabel-umbrella.h */,
+				46E50A1A1E7598D671663C90E2F9FF00 /* MarqueeLabel.debug.xcconfig */,
+				147D1E396BFD010C500D8F2D1A2CA557 /* MarqueeLabel.release.xcconfig */,
 			);
-			name = "Pods-soundMusic";
-			path = "Target Support Files/Pods-soundMusic";
+			name = "Support Files";
+			path = "../Target Support Files/MarqueeLabel";
+			sourceTree = "<group>";
+		};
+		CA0B97F54F054ED4E45E343B6AA388B1 /* MarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4A0FE1F280EBE6CD17CB11D260C4855F /* MarqueeLabel.swift */,
+				ADDCF4F254169A4BAF86B07D092EDF72 /* Support Files */,
+			);
+			name = MarqueeLabel;
+			path = MarqueeLabel;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7B65F7FFFFBA743DDB2CAFE19B017A0A /* Products */,
-				8DBA06A2ABA92FBD61961514AFA7E7D7 /* Targets Support Files */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				F89CF82BFB6B29D57B3ED666A4980FA6 /* Pods */,
+				7A95B4DC2790197F219CE4ECE9D80AEB /* Products */,
+				7DC3A4DA252ECE25B1F464ED41B5EE78 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
+				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
+				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F89CF82BFB6B29D57B3ED666A4980FA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B97F54F054ED4E45E343B6AA388B1 /* MarqueeLabel */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2153E5E7BBEB383460D23405DA579A43 /* Headers */ = {
+		46B4A5414B4C3555FD550CA06E891ADC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB01248C1C5CB973879C55B5ED3A439A /* Pods-soundMusic-umbrella.h in Headers */,
+				E7C9CB4F6D6F2BDC7E712BDDAF0EAD1A /* Pods-soundMusic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAA2AF2FEEBF748BED3AC45024887C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9878203C57B16F8A2341363CE6ADE2 /* MarqueeLabel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +196,39 @@
 /* Begin PBXNativeTarget section */
 		3EFAA99A1D25997591DF8035B823ACC1 /* Pods-soundMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5C5153F0A62B0DF4E6CC1EB10438B16 /* Build configuration list for PBXNativeTarget "Pods-soundMusic" */;
+			buildConfigurationList = DC1095B37237CD0B1A69AB5257E844DE /* Build configuration list for PBXNativeTarget "Pods-soundMusic" */;
 			buildPhases = (
-				2153E5E7BBEB383460D23405DA579A43 /* Headers */,
-				F86B6FDF663F571B63894D51A33F723B /* Sources */,
-				BFC7B08F85C3D17BF24253CDE8F50FB8 /* Frameworks */,
-				A462FBDF53D27B0323D355B26B3574BA /* Resources */,
+				46B4A5414B4C3555FD550CA06E891ADC /* Headers */,
+				938626D227465295A410CF17D602C2F0 /* Sources */,
+				7A34105693DF94135549326D294A3D51 /* Frameworks */,
+				6D2EF4B04498C451C2233DD28C83BF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7934A70B66530387BA2E01256A8DC205 /* PBXTargetDependency */,
+			);
+			name = "Pods-soundMusic";
+			productName = Pods_soundMusic;
+			productReference = AF3A36335DED895591CF8ADDD0063E7A /* Pods-soundMusic */;
+			productType = "com.apple.product-type.framework";
+		};
+		C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251180A9B6B807638C65029608571B8F /* Build configuration list for PBXNativeTarget "MarqueeLabel" */;
+			buildPhases = (
+				AAAAA2AF2FEEBF748BED3AC45024887C /* Headers */,
+				CE51103B19EB6AFC57B1C6125F7EB6C5 /* Sources */,
+				DE1746FCBBF82FC26CB045D88B1BCC1C /* Frameworks */,
+				1D85F9BE0FDD1AA06297EB5F21E58E97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-soundMusic";
-			productName = Pods_soundMusic;
-			productReference = AF3A36335DED895591CF8ADDD0063E7A /* Pods-soundMusic */;
+			name = MarqueeLabel;
+			productName = MarqueeLabel;
+			productReference = CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -146,17 +249,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7B65F7FFFFBA743DDB2CAFE19B017A0A /* Products */;
+			productRefGroup = 7A95B4DC2790197F219CE4ECE9D80AEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */,
 				3EFAA99A1D25997591DF8035B823ACC1 /* Pods-soundMusic */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A462FBDF53D27B0323D355B26B3574BA /* Resources */ = {
+		1D85F9BE0FDD1AA06297EB5F21E58E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D2EF4B04498C451C2233DD28C83BF14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,17 +277,72 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F86B6FDF663F571B63894D51A33F723B /* Sources */ = {
+		938626D227465295A410CF17D602C2F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3674F34FE87CC49504A01971F7E59BC /* Pods-soundMusic-dummy.m in Sources */,
+				52C6AFD4CB290FAE1620C48F6C33F9B9 /* Pods-soundMusic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE51103B19EB6AFC57B1C6125F7EB6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EE53C9966D4142DD5B6BA2AD06D52B /* MarqueeLabel.swift in Sources */,
+				6CE0B8970AEE2F68ABC4434712981A8A /* MarqueeLabel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7934A70B66530387BA2E01256A8DC205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarqueeLabel;
+			target = C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */;
+			targetProxy = F771FEC4D20AF26D1C6D211AD0F89BE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4439E7DB03B3386EB6300E2F77283682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F549AD987746D20A9D0924F54CA68F09 /* Pods-soundMusic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-soundMusic/Pods-soundMusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-soundMusic/Pods-soundMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,9 +471,78 @@
 			};
 			name = Release;
 		};
-		AE2B6C682B53E7CAF732B7ADBF068A2F /* Release */ = {
+		8B71D140048E37EA295DDF2313D659CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0383DA211925000D73C804BF85BA3A5E /* Pods-soundMusic.release.xcconfig */;
+			baseConfigurationReference = 147D1E396BFD010C500D8F2D1A2CA557 /* MarqueeLabel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MarqueeLabel/MarqueeLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel.modulemap";
+				PRODUCT_MODULE_NAME = MarqueeLabel;
+				PRODUCT_NAME = MarqueeLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7500E7CF0B2C72ECABA50BE15BC536A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E50A1A1E7598D671663C90E2F9FF00 /* MarqueeLabel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MarqueeLabel/MarqueeLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel.modulemap";
+				PRODUCT_MODULE_NAME = MarqueeLabel;
+				PRODUCT_NAME = MarqueeLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0BBD195EBDC2415183FE45180C98F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7253F0F1AF3A2020C70C7C0F67D58A54 /* Pods-soundMusic.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -343,46 +578,18 @@
 			};
 			name = Release;
 		};
-		D9BBD25B2B72DF711A6F1A35E751BF37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2923D6F88D939935AD2FFC0A6B41902 /* Pods-soundMusic.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-soundMusic/Pods-soundMusic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-soundMusic/Pods-soundMusic.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		251180A9B6B807638C65029608571B8F /* Build configuration list for PBXNativeTarget "MarqueeLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7500E7CF0B2C72ECABA50BE15BC536A /* Debug */,
+				8B71D140048E37EA295DDF2313D659CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -392,11 +599,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5C5153F0A62B0DF4E6CC1EB10438B16 /* Build configuration list for PBXNativeTarget "Pods-soundMusic" */ = {
+		DC1095B37237CD0B1A69AB5257E844DE /* Build configuration list for PBXNativeTarget "Pods-soundMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9BBD25B2B72DF711A6F1A35E751BF37 /* Debug */,
-				AE2B6C682B53E7CAF732B7ADBF068A2F /* Release */,
+				4439E7DB03B3386EB6300E2F77283682 /* Debug */,
+				D0BBD195EBDC2415183FE45180C98F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

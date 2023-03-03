@@ -92,5 +92,11 @@ extension DetailVC: UITableViewDelegate, UITableViewDataSource {
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        screen?.playerView.setupView(data: cardModel?.cardList?[indexPath.row] ?? CardListModel())
+        screen?.playerViewBottomAnchor?.constant = 0
+        animationWithView()
+    }
+    
     
 }

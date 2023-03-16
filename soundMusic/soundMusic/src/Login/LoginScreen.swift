@@ -47,7 +47,7 @@ class LoginScreen: UIView {
         tf.keyboardType = .emailAddress // defaut
         tf.placeholder = "E-mail: user@outlook.com"
         tf.textColor = .darkGray
-        tf.isSecureTextEntry = true
+        tf.isSecureTextEntry = false
         return tf
     }()
     
@@ -74,6 +74,7 @@ class LoginScreen: UIView {
         btn.layer.cornerRadius =  8
         btn.backgroundColor = UIColor( red: 102/255, green: 103/255, blue: 171/255, alpha: 1.0)
         btn.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
+       
         return btn
     }()
     
@@ -121,9 +122,41 @@ class LoginScreen: UIView {
            self.delegate?.actionRegisterButton()
        }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    
+    
+    public func validarTextFields(){
+         let email: String = self.emailTextField.text ?? ""
+         let password: String = self.passwordTextField.text ?? ""
+         
+         if !email.isEmpty && !password.isEmpty{
+             self.configButtonEnable(true)
+         }else{
+             self.configButtonEnable(false)
+         }
+     }
+     
+    private func configButtonEnable(_ enable : Bool ){
+          if enable{
+              self.loginButton.setTitleColor(.white, for: .normal)
+              self.loginButton.isEnabled = true
+          }else {
+              self.loginButton.setTitleColor(.lightGray, for: .normal)
+              self.loginButton.isEnabled = false
+          }
+      }
+    
+    public func getEmail() -> String{
+            return self.emailTextField.text ?? ""
+        }
+        
+        public func getPassword() -> String{
+            return self.passwordTextField.text ?? ""
+        }
+        
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
     
     private func setupConstraints(){
         

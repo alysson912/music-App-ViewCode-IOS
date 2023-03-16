@@ -11,10 +11,10 @@ import UIKit
 import FirebaseAuth
 
 class RegisterVC: UIViewController {
-
+    
     var registerScreen: RegisterScreen?
-    var auth : Auth?
-    var alert : Alert?
+    var auth: Auth?
+    var alert: Alert?
     
     
     override func loadView() {
@@ -24,23 +24,23 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
-        self.registerScreen?.configTextFieldDelegate(delegate: self)
-        self.registerScreen?.delegate(delegate: self)
-       // self.auth = Auth.auth()
-      //  self.alert = Alert(controller: self)
+        navigationController?.isNavigationBarHidden = true
+        registerScreen?.configTextFieldDelegate(delegate: self)
+        registerScreen?.delegate(delegate: self)
+        auth = Auth.auth()
+        alert = Alert(controller: self)
     }
 }
-     extension RegisterVC: UITextFieldDelegate {
-         
-         func textFieldDidEndEditing(_ textField: UITextField) {
-             self.registerScreen?.validarTextFields()
-         }
-         
-         func textFieldShouldReturn(_ texField: UITextField) -> Bool {
+extension RegisterVC: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.registerScreen?.validarTextFields()
+    }
+    
+    func textFieldShouldReturn(_ texField: UITextField) -> Bool {
         texField.resignFirstResponder()
-             
-         return true
+        
+        return true
     }
 }
 
@@ -49,13 +49,11 @@ extension RegisterVC: RegisterScreenProtocol {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func actionRegisterButton() {
+    func actionRegisterButton(){
         
-        guard let register = self.registerScreen else { return }
-       
-  
+        guard let register = registerScreen else { return }
         
-        self.auth?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { (result, error) in
+        auth?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { (result, error) in
             if error != nil{
                 self.alert?.getAlert(titulo: "Atenção", mensagem: " Error ao Cadastrar ")
             }else {

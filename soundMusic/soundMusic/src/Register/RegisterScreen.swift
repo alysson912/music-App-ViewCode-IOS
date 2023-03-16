@@ -31,11 +31,29 @@ class RegisterScreen: UIView {
     lazy var imageAddUser: UIImageView = {
        let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage( named: "addUserIcon")
+        image.image = UIImage( named: "showDataUser")
         image.contentMode = .scaleAspectFit
        
         return image
     }()
+    
+    lazy var nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Nome:"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 45, weight: .bold)
+        return label
+    }()
+    lazy var ageLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Idade"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 45, weight: .bold)
+        return label
+    }()
+    
     
     lazy var emailTextField : UITextField = {
         let email = UITextField()

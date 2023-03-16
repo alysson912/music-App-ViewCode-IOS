@@ -21,15 +21,17 @@ class LoginVC: UIViewController {
         screen?.delegate( delegate:  self)
         screen?.configTextFieldDelegate(delegate: self)
         
-      //  auth = Auth.auth()
-      //  alert = Alert(controller: self )
+        auth = Auth.auth()
+        alert = Alert(controller: self )
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+       // screen?.validarTextFields()
     }
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.setNavigationBarHidden(true, animated: false)
+     }
 }
 extension LoginVC: UITextFieldDelegate {
     
@@ -51,24 +53,26 @@ extension LoginVC: UITextFieldDelegate {
 extension LoginVC: LoginScreenProtocol{
     func actionLoginButton() {
         
+        //screen?.validarTextFields()
+        
         let homeVC = HomeVC()
         self.navigationController?.pushViewController(homeVC, animated: true )
-        
-//        guard let login = self.loginScreen else { return }
-//
-//        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
-//
-//            if error != nil{
-//                self.alert?.getAlert(titulo: "Atenção", mensagem: "Login ou senha inválido !")
-//
-//            }else {
-//                if usuario == nil  {
-//                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Usuário inválido")
-//                }else {
-//                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Login efetuado com Sucesso!")
-//                }
-//            }
-//        })
+    
+        guard let login = screen else { return }
+
+        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
+
+            if error != nil{
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "Login ou senha inválido !")
+
+            }else {
+                if usuario == nil  {
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Usuário inválido")
+                }else {
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Login efetuado com Sucesso!")
+                }
+            }
+        })
         
     }
     

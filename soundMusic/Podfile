@@ -8,5 +8,8 @@ target 'soundMusic' do
   # Pods for soundMusic
 
 pod 'MarqueeLabel'
+pod 'FirebaseAnalytics'
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
 
 end
